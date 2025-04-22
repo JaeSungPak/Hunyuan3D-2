@@ -13,6 +13,20 @@ cd hy3dgen/texgen/differentiable_renderer
 python3 setup.py install
 ```
 
+### `run.py` Quick Start
+
+You can generate a 3D mesh and texture from a simple text prompt using `run.py`:
+
+```bash
+python run.py "A retriever"
+```
+
+### Output Directory
+```bash
+./assets/demo.png # generated image
+./logs/result.glb # final output
+```
+
 ### Code Usage
 
 We designed a diffusers-like API to use our shape generation model - Hunyuan3D-DiT and texture synthesis model -
@@ -47,17 +61,3 @@ mesh = pipeline(mesh, image='assets/demo.png')
 Please visit [examples](examples) folder for more advanced usage, such as **multiview image to 3D generation** and *
 *texture generation
 for handcrafted mesh**.
-
-### `run.py` Quick Start
-
-You can generate a 3D mesh and texture from a simple text prompt using `run.py`:
-
-```bash
-python run.py "A retriever"
-```
-
-### Output Directory
-```bash
-./assets/demo.png # generated image
-./logs/result.glb # final output
-```
