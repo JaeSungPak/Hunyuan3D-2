@@ -54,3 +54,10 @@ You can generate a 3D mesh and texture from a simple text prompt using `run.py`:
 
 ```bash
 python run.py "A retriever"
+```
+
+### Output Directory
+```bash
+./assets/demo.png # generated image
+./logs/result.glb # final output
+```
