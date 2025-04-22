@@ -36,4 +36,6 @@ mesh = pipeline(mesh, image='assets/demo.png')
 
 print("texture is generated!")
 
-mesh.export("./logs/result.glb")
+output_path = "logs/result.glb"
+os.makedirs(os.path.dirname(output_path), exist_ok=True)
+mesh.export(output_path)
