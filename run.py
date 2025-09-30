@@ -8,6 +8,7 @@ from diffusers import StableDiffusionPipeline
 
 from hy3dgen.texgen import Hunyuan3DPaintPipeline
 from hy3dgen.shapegen import Hunyuan3DDiTFlowMatchingPipeline
+
 from hy3dgen.shapegen import FaceReducer, FloaterRemover, DegenerateFaceRemover
 
 parser = argparse.ArgumentParser(description="Generate 3D model from prompt using Stable Diffusion and Hunyuan3D")
@@ -30,9 +31,8 @@ print("image is generated!")
 pipeline = Hunyuan3DDiTFlowMatchingPipeline.from_pretrained('tencent/Hunyuan3D-2')
 mesh = pipeline(image='assets/demo.png')[0]
 
-
-for cleaner in [FloaterRemover(), DegenerateFaceRemover(), FaceReducer()]:
-    mesh = cleaner(mesh)
+# for cleaner in [FloaterRemover(), DegenerateFaceRemover(), FaceReducer()]:
+#     mesh = cleaner(mesh)
 
 print("mesh is generated!")
 
