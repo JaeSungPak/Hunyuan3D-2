@@ -1,0 +1,20 @@
+Warning:
+Unable to load the following plugins:
+
+	libio_e57.so: libio_e57.so does not seem to be a Qt Plugin.
+
+Cannot load library /opt/conda/envs/hunyuan/lib/python3.10/site-packages/pymeshlab/lib/plugins/libio_e57.so: (/usr/lib/x86_64-linux-gnu/libp11-kit.so.0: undefined symbol: ffi_type_pointer, version LIBFFI_BASE_7.0)
+
+🔧 모델 로딩 중...
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  3.36it/s]Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00,  6.43it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:01<00:00,  4.87it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:01<00:00,  5.51it/s]
+2025-07-14 13:25:08,153 - hy3dgen.shapgen - INFO - Try to load model from local path: /mnt/jaesung/.cache/hy3dgen/tencent/Hunyuan3D-2/hunyuan3d-dit-v2-0
+2025-07-14 13:25:08,153 - hy3dgen.shapgen - INFO - Model path not exists, try to download from huggingface
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 4392.71it/s]
+2025-07-14 13:25:08,380 - hy3dgen.shapgen - INFO - Loading model from /mnt/jaesung/MagicClay/threestudio/.cache/hub/models--tencent--Hunyuan3D-2/snapshots/34e28261f71c32975727be8db0eace439a280f82/hunyuan3d-dit-v2-0/model.fp16.safetensors
+PointCrossAttentionEncoder INFO: pc_sharpedge_size is given, using pc_size=5120, pc_sharpedge_size=5120
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 60183.17it/s]
+Fetching 20 files:   0%|          | 0/20 [00:00<?, ?it/s]Fetching 20 files: 100%|██████████| 20/20 [00:00<00:00, 7065.88it/s]
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:01,  4.17it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00,  7.21it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.97it/s]
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/opt/conda/envs/hunyuan/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:02,  2.37it/s]

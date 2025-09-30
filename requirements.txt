@@ -5,7 +5,7 @@ diffusers
 einops
 opencv-python
 numpy
-torch
+torch==2.1.0
 transformers
 torchvision
 #taming-transformers-rom1504
